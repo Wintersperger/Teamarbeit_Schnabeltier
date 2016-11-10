@@ -1,4 +1,4 @@
-package Moser;
+package Gruppe_Burian_Moser_Wintersperger;
 
 /**
  * Eine Klasse in der die Fläche von Kreis, Dreieck und Rechteck 
