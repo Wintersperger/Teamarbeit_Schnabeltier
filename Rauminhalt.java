@@ -1,5 +1,11 @@
-import loesung.IRaumInhalt;
+package wintersperger;
 
+import loesung.IRaumInhalt;
+/**
+ * Rauminhalt. Berechnet den Rauminhalt von Quader, Zylinder, Prisma mit Dreiseitiger Grundfläche
+ * @author mwintersperger
+ * @version 2016-11-10
+ */
 public class Rauminhalt implements IRaumInhalt{
 	private double ergebnis;
 	/**
@@ -21,8 +27,10 @@ public class Rauminhalt implements IRaumInhalt{
 	}
 	/**
 	 * Rauminhalt Prisma
-	 * @param r der Radius der Grundfäche des Zylinders
-	 * @param h die Höhe des Zylinders
+	 * @param a Seitenlänge a der Grundfläche
+	 * @param b Seitenlänge b der Grundfläche
+	 * @param c Seitenlänge c der Grundfläche
+	 * @param h die Höhe des Prismas
 	 */
 	public Rauminhalt(double a, double b, double c, double h){
 		double s = (a+b+c)/2;
@@ -31,7 +39,6 @@ public class Rauminhalt implements IRaumInhalt{
 	}
 	@Override
 	public double getRaumInhalt() {
-		// TODO Auto-generated method stub
 		return ergebnis;
 	}
 }
