@@ -1,5 +1,3 @@
-package wintersperger;
-
 import loesung.IRaumInhalt;
 
 public class Rauminhalt implements IRaumInhalt{
@@ -17,7 +15,6 @@ public class Rauminhalt implements IRaumInhalt{
 	 * Rauminhalt Zylinder
 	 * @param r der Radius der Grundfäche des Zylinders
 	 * @param h die Höhe des Zylinders
-	 * @return der Rauminhalt des Zylinders
 	 */
 	public Rauminhalt(double r, double h){
 		this.ergebnis= Math.PI*r*r*h;
@@ -26,7 +23,6 @@ public class Rauminhalt implements IRaumInhalt{
 	 * Rauminhalt Prisma
 	 * @param r der Radius der Grundfäche des Zylinders
 	 * @param h die Höhe des Zylinders
-	 * @return der Rauminhalt des Zylinders
 	 */
 	public Rauminhalt(double a, double b, double c, double h){
 		double s = (a+b+c)/2;
