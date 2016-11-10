@@ -4,37 +4,29 @@ import loesung.IRaumInhalt;
 
 public class Rauminhalt implements IRaumInhalt{
 	private double pi;
-	public Rauminhalt(){
-		this.pi =3.14159265359;
-	}
-	@Override
-	public double getRaumInhalt() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
+	private double temp;
 	/**
-	 * Rauminhalt quader
+	 * Rauminhalt eines quaders
 	 * @param a die Länge des Quaders
 	 * @param b die Breite des Quaders
 	 * @param h die Höhe des Quaders
-	 * @return der Rauminhalt des Quaders
 	 */
-	public double getRaumInhalt(double a, double b, double h) {
-			double temp = a*b*h;
-		return temp;
+	public Rauminhalt(double a, double b, double h) {
+		this.pi =3.14159265359;
+		double temp = a*b*h;
 	}
-
 	/**
 	 * Rauminhalt Zylinder
 	 * @param r der Radius der Grundfäche des Zylinders
 	 * @param h die Höhe des Zylinders
 	 * @return der Rauminhalt des Zylinders
 	 */
-	public double getRaumInhalt(double r, double h){
+	public Rauminhalt(double r, double h){
 		double temp= pi*r*r*h;
+	}
+	@Override
+	public double getRaumInhalt() {
+		// TODO Auto-generated method stub
 		return temp;
 	}
-	
-
 }
