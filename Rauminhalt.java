@@ -1,4 +1,4 @@
-package wintersperger;
+package Gruppe_Burian_Moser_Wintersperger;
 
 import loesung.IRaumInhalt;
 /**
