@@ -44,12 +44,11 @@ public class Zahlen implements IZahlen{
      */
     @Override
     public double getMaximum() {
-        double max;
+        double max = 0;
         Iterator it = set.iterator();
         while(it.hasNext()){
-            it.next();
+            max = (double)(it.next());
         }
-        max = (double)(it.next());
         return max;
     }
 
