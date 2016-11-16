@@ -1,4 +1,5 @@
-package Schule.AU08;
+package Gruppe_Burian_Moser_Wintersperger;
+
 /**
  * Klasse in der die Methoden der Klassen Flaeche, Zahlen und RaumInhalt getestet werden
  *
